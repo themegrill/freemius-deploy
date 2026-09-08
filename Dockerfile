@@ -1,7 +1,7 @@
 FROM php:7.4-cli
 
 # install git
-RUN apt-get update
+RUN apt-get -o Acquire::Check-Valid-Until=false update
 RUN apt-get install -y git
 
 
